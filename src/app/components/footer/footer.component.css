@@ -1,0 +1,60 @@
+.footer{
+    background: linear-gradient(180deg,#035d88,#023852);
+}
+
+.footer-content{
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.footer-heading1{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    opacity: .5;
+    letter-spacing: .3px;
+    margin-bottom: 24px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+a{
+    padding: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    margin: 0 0 12px;
+}
+
+.msds-icon{
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    box-sizing: content-box;
+    vertical-align: middle;
+}
+
+hr.new1 {
+    background: #fff;
+    opacity: .2;
+}
+
+.footer-bottom-text{
+    font-size: 12px;
+    color: #fff;
+    opacity: .5;
+    line-height: 18px;
+    font-style: normal;
+}
+
+.italic{
+    font-style: normal;
+}
+
+.fab{
+    font-size: 20px;
+    padding: 10px;
+}

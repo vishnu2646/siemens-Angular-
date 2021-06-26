@@ -1,0 +1,195 @@
+<app-header></app-header>
+<div class="container">
+    <h6 class="header-title text-center m-5">Find your device</h6>
+    <div class="content">
+        <h5>Use the search field below to find out if your device is supported</h5>
+        <p class="text1">We’re adding new devices all the time, but there might be a slight delay from the time a device comes<br/>
+            on the market to when we release the drivers for it. Check back if you don’t find the device you’re looking for.</p>
+        <p class="text2">
+            <span style="font-size: small;">
+                Milestone does not warrant nor accept liability for the Technology Partner’s devices and their functionality. Milestone only examines the compatibility or the manufactures’ documentation for compatibility with the Milestone XProtect VMS version applied in tests as well as the listed firmware of the device. The use of Milestone drivers downloaded with the Milestone XProtect® Device Pack is governed by Milestone EULA. Milestone does not warrant nor accept liability for non-Milestone drivers, and your use of non-Milestone drivers is subject to the terms of the licenses defined and provided by the Technology Partners and/or other licensors of the software. 
+            </span>
+        </p>
+        <div class="card">
+            <div class="card-body">
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Use comma for separation between your search entries e.g Axis, 4K, edge storage" >
+                        <button><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="filters m-4">
+                    <p class="filter-text" (click)=toggleDisplayDiv()>Show advanced filters</p>
+                    <a href="" class="down-icon"><i class="fa fa-angle-down"></i></a>
+                </div>
+                <div class="filters-list m-5" [hidden]="isShowDiv">
+                    <div class="filter-title">
+                        <p>Advanced filters</p>
+                    </div>
+                </div>
+                <div class="filter-forms" [hidden]="isShowDiv">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 mb-2 md-form">
+                                <label for="exampleInputEmail1">Manufacturer</label>
+                                <select name="cars" id="cars" form="carform">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="#" class="mt-2">Clear filters</a>
+                </div>
+                <div class="divice">
+                    <p>Number of supported devices: <b>10422</b></p>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="tblresponse">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name <i class="fas fa-sort"></i></th>
+                                        <th scope="col">Class & Sec<i class="fas fa-sort"></i></th>
+                                        <th scope="col">Instuition <i class="fas fa-sort"></i></th>
+                                        <th scope="col">Phone <i class="fas fa-sort"></i></th>
+                                        <th scope="col">City <i class="fas fa-sort"></i></th>
+                                        <th scope="col">Address <i class="fas fa-sort"></i></th>
+                                        <th scope="col">P/G <i class="fas fa-sort"></i></th>
+                                        <th scope="col">Hostaler <i class="fas fa-sort"></i></th>
+                                        <th scope="col">Tutor <i class="fas fa-sort"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let student of students">
+                                        <td><a [routerLink]="['/details', student.id]">{{student.Name}}</a></td>
+                                        <td><a [routerLink]="['/details', student.id]">{{student.class}}</a></td>
+                                        <td><a [routerLink]="['/details', student.id]">{{student.institition}}</a></td>
+                                        <td><a [routerLink]="['/details', student.id]">{{student.phone}}</a></td>
+                                        <td><a [routerLink]="['/details', student.id]">{{student.city}}</a></td>
+                                        <td><a [routerLink]="['/details', student.id]">{{student.address}}</a></td>
+                                        <td><a [routerLink]="['/details', student.id]">{{student.pg}}</a></td>
+                                        <td><a [routerLink]="['/details', student.id]">{{student.hostel}}</a></td>
+                                        <td><a [routerLink]="['/details', student.id]">{{student.tutor}}</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer><app-footer>

@@ -1,0 +1,66 @@
+﻿if (!window.deferredScripts) {
+    window.deferredScripts = [];
+}
+
+function defer(fn) {
+    window.deferredScripts.push(fn);
+}
+
+function onResize(callback) {
+    var resizeTimeout = null;
+    window.addEventListener('resize', function (event) {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function () {
+            callback();
+        }, 100);
+    });
+}
+
+function selectBackgroundImage(selector) {
+    var backgroundImageBreakpointDefaultValue = 480;
+
+    selector = selector || "select-image-pending";
+    var elements = document.getElementsByClassName(selector);
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        var elementClasses = (element.className || "");
+
+        var isNarrow = elementClasses.indexOf("col-xs-4") >= 0;
+        var backgroundImageBreakpoint = element.getAttribute("data-backgroundimagebreakpoint");
+
+        if (backgroundImageBreakpoint == 0)
+        {
+            backgroundImageBreakpoint = backgroundImageBreakpointDefaultValue;
+        }
+
+        if (window.innerWidth != 0 && window.innerWidth < backgroundImageBreakpoint)
+            isNarrow = true;
+
+        var hideImageOnNarrow = elementClasses.indexOf("hide-image-on-narrow") >= 0;
+
+        if (isNarrow && hideImageOnNarrow) {
+            element.className = elementClasses.replace(selector, "select-image-done");
+            element.style.backgroundImage = "";
+            continue;
+        }
+
+        var image = element.getAttribute("data-backgroundimage");
+        var narrowBackgroundImage = element.getAttribute("data-backgroundimagenarrow");
+
+        if (isNarrow && narrowBackgroundImage != null) {
+            image = narrowBackgroundImage;
+        }
+
+        if (image != null) {
+            element.style.backgroundImage = "url('" + image + "')";
+        }
+            
+        else
+            element.style.backgroundImage = "";
+        element.className = elementClasses.replace(selector, "select-image-done");
+    }
+}
+
+onResize(function() {
+    selectBackgroundImage("select-image-done");
+})
