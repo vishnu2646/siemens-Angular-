@@ -14,7 +14,7 @@
             <div class="card-body">
                 <div class="search">
                     <form>
-                        <input type="text" placeholder="Use comma for separation between your search entries e.g Axis, 4K, edge storage" >
+                        <input #search type="text" (keyup.enter)="setValue(search.value)" placeholder="Use comma for separation between your search entries e.g Axis, 4K, edge storage"  >
                         <button><i class="fa fa-search"></i></button>
                     </form>
                 </div>

@@ -11,6 +11,7 @@ import { Comments } from '../../classess/comments';
 export class HeadercontentComponent implements OnInit {
 
   students : Comments[];
+  filteredStudents:any[];
   
   constructor(private _apiService:apiService) {}
 
@@ -25,8 +26,17 @@ export class HeadercontentComponent implements OnInit {
 
   
   isShowDiv = true;
+  isShowTotalStudents= true;
    
   toggleDisplayDiv() {
     this.isShowDiv = !this.isShowDiv;
+  }
+  setValue(value:string){
+
+ this.filteredStudents =  this.students
+      .filter(item => Object.keys(item)
+        .some(key => value.split(',').some(arg => item[key].toString().toLowerCase().includes(arg.toLowerCase())))
+      );
+   //this.isShowTotalStudents =  false;   
   }
 }
